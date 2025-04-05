@@ -25,11 +25,21 @@ Sistema de detección de conductas sospechosas en exámenes en línea mediante a
 git clone https://github.com/fcapobiancot/cheating-detection-tool.git
 cd cheating-detection-tool
 
-2.Instalar las dependencias (entorno virtual para que no hayan conflictos con otras versiones)
+2. Crear entorno virtual con python 3.9
+python -m venv venv
+
+3. ACtivar entorno virtual
+venv\Scripts\activate
+
+// Verificá que está activo
+// Cuando esté activo, vas a ver el nombre del entorno al principio de la línea en la terminal, por ejemplo:
+// (venv) C:\ruta\al\proyecto>
+
+4.Instalar las dependencias 
 
 pip install tensorflow==2.12.0 opencv-python==4.8.0.76 numpy==1.24.3 pillow==10.0.0 moviepy==1.0.3
 
-3.Ejecutar la aplicación principal:
+5.Ejecutar la aplicación principal:
 
 python cheatingDetectionTool.py
 
